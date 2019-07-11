@@ -123,6 +123,8 @@ while response != 'end':
                         display_ctext = display_ctext[:response] + results[response] + display_ctext[response+crib_len:]
                     else:
                         print('Invalid response. Try again.')
+                        continue
+                break
         except ValueError:
             if response == 'end':
                 print("Your message is: " + display_ctext)
